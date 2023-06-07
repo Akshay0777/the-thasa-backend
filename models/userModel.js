@@ -1,5 +1,4 @@
 const mongoose = require("mongoose")
-const { boolean } = require("webidl-conversions")
 const userSchema = mongoose.Schema(
   {
     userName : {
@@ -18,7 +17,7 @@ const userSchema = mongoose.Schema(
     }
   },
   {
-    timeStamp : true
+    timestamps : true
   }
 )
 
