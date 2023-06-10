@@ -18,10 +18,10 @@ const productSchema = mongoose.Schema(
       type : Array,
     },
     size : {
-      type : String
+      type : Array
     },
     color : {
-      type : String
+      type : Array
     },
     price : {
       type : Number,
@@ -32,6 +32,14 @@ const productSchema = mongoose.Schema(
       default : "all"
     },
     customize : {
+      type : Boolean,
+      default : false
+    },
+    functionSpecial : {
+      type: Boolean,
+      default : false
+    },
+    isActive : {
       type : Boolean,
       default : false
     }
