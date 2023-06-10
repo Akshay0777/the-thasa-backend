@@ -16,7 +16,7 @@ const createCart = async (req,res) => {
 // get All Carts
 const getCarts = async (req,res)=>{
   try{
-    const carts = await Cart.find({isActive : {$set : true}});
+    const carts = await Cart.find();
     res.status(200).json(carts);
   }
   catch (err) {

@@ -27,7 +27,7 @@ const getProducts = async (req,res)=>{
       products = await Product.find({category : {$in : [qCategory]}});
     }
     else{
-      products = await Product.find({isActive : {$set : true}});
+      products = await Product.find();
     }
     res.status(200).json(products);
   }
